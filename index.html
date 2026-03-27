@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joyal Gurung - Full Stack Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Joyal Gurung</a>
+
+        <div>
+            <a class="nav-link text-white d-inline" href="#html">HTML</a>
+            <a class="nav-link text-white d-inline" href="#css">CSS</a>
+            <a class="nav-link text-white d-inline" href="#bootstrap">Bootstrap</a>
+            <a class="nav-link text-white d-inline" href="#js">JavaScript</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<div class="container text-center mt-5">
+    <h1>Joyal Gurung</h1>
+    <h3>Full Stack Development Portfolio</h3>
+</div>
+
+<!-- HTML SECTION -->
+<section id="html">
+    <h2>HTML Demonstration</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Your Message"></textarea>
+
+        <label>Gender:</label>
+        <div>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <label>Skills:</label>
+        <div>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- CSS SECTION -->
+<section id="css">
+    <h2>CSS Demonstration</h2>
+
+    <div class="flex-container">
+        <div class="box">HTML</div>
+        <div class="box">CSS</div>
+        <div class="box">JS</div>
+    </div>
+</section>
+
+<!-- BOOTSTRAP SECTION -->
+<section id="bootstrap">
+    <h2>Bootstrap Dashboard</h2>
+
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <div class="card p-4 bg-primary text-white">
+                    <h5>Total Users</h5>
+                    <h2>120</h2>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-4 bg-success text-white">
+                    <h5>Revenue</h5>
+                    <h2>$450</h2>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-4 bg-danger text-white">
+                    <h5>Visits</h5>
+                    <h2>1,200</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- JAVASCRIPT SECTION -->
+<section id="js">
+    <h2>JavaScript Demonstration</h2>
+
+    <!-- Counter -->
+    <h4>Click Counter</h4>
+    <button onclick="increase()">Click Me</button>
+    <p id="count">0</p>
+
+    <!-- Calculator -->
+    <h4>Simple Calculator</h4>
+
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
+
+    <br><br>
+
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+
+    <p id="result"></p>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    © 2026 Joyal Gurung | Full Stack Portfolio
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
